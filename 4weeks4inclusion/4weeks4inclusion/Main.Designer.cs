@@ -28,21 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.initial1 = new _4weeks4inclusion.Initial();
             this.SuspendLayout();
+            // 
+            // initial1
+            // 
+            this.initial1.BackColor = System.Drawing.Color.Transparent;
+            this.initial1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.initial1.Location = new System.Drawing.Point(305, 29);
+            this.initial1.Name = "initial1";
+            this.initial1.parentForm = null;
+            this.initial1.Size = new System.Drawing.Size(387, 340);
+            this.initial1.TabIndex = 0;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClientSize = new System.Drawing.Size(759, 450);
+            this.Controls.Add(this.initial1);
             this.Name = "Main";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private Initial initial1;
     }
 }
 

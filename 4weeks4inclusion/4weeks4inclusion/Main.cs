@@ -18,9 +18,24 @@ namespace _4weeks4inclusion
         public Main()
         {
             InitializeComponent();
+            initial1.parentForm = this;
+            initial1.Visible = false;
+            home();
+
+        }
+        public void home()
+        {
+            if (currUC != null) currUC.Visible = false;
+            initial1.Show();
+            currUC = initial1;
+        }
+        private void Main_Load(object sender, EventArgs e)
+        {
+            Size size = this.Size;
+            initial1.setPos(size.Width, size.Height);
         }
 
-        private void Main_Load(object sender, EventArgs e)
+        private void initial2_Load(object sender, EventArgs e)
         {
 
         }
