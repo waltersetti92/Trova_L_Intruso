@@ -17,3 +17,4 @@ C:\Users\Luigi\Source\Repos\Trova_L_Intruso_final\4weeks4inclusion\4weeks4inclus
 C:\Users\Luigi\Source\Repos\Trova_L_Intruso_final\4weeks4inclusion\4weeks4inclusion\obj\Debug\4weeks4inclusion.csproj.CoreCompileInputs.cache
 C:\Users\Luigi\Source\Repos\Trova_L_Intruso_final\4weeks4inclusion\4weeks4inclusion\obj\Debug\4weeks4inclusion.exe
 C:\Users\Luigi\Source\Repos\Trova_L_Intruso_final\4weeks4inclusion\4weeks4inclusion\obj\Debug\4weeks4inclusion.pdb
+C:\Users\Luigi\Source\Repos\Trova_L_Intruso_final\4weeks4inclusion\4weeks4inclusion\obj\Debug\4weeks4inclusion.csprojAssemblyReference.cache

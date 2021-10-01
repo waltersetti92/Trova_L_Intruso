@@ -27,10 +27,30 @@ namespace _4weeks4inclusion
             Location = new Point(offset, offset);
             Width = w - 2 * offset;
             Height = h - 2 * offset;
-            labLuda.Location = new Point(w / 2 - labLuda.Width / 2 - offset, 200);
+          //  labLuda.Location = new Point(w / 2 - labLuda.Width / 2 - offset, 200);
         }
 
         private void Initial_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labLuda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
