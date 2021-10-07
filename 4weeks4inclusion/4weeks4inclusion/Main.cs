@@ -17,6 +17,7 @@ namespace _4weeks4inclusion
         public SoundPlayer player = null;
         public Main()
         {
+            step = 1;
             InitializeComponent();
             interaction11.parentForm = this;
             initial1.parentForm = this;
@@ -42,6 +43,13 @@ namespace _4weeks4inclusion
             Size size = this.Size;
             initial1.setPos(size.Width, size.Height);
             interaction11.setPos(size.Width, size.Height);
+        }
+        public void playbackResourceAudio(string audioname)
+        {
+
+            string s = resourcesPath + "\\" + audioname + ".wav";
+            player = new SoundPlayer(s);
+            player.Play();
         }
 
         private void initial2_Load(object sender, EventArgs e)
