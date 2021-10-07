@@ -49,7 +49,7 @@
             this.Listen.Name = "Listen";
             this.Listen.Size = new System.Drawing.Size(141, 30);
             this.Listen.TabIndex = 4;
-            this.Listen.Text = "TRIAL";
+            this.Listen.Text = "ANIMALI";
             this.Listen.UseVisualStyleBackColor = false;
             this.Listen.Click += new System.EventHandler(this.Listen_Click);
             // 
@@ -95,11 +95,12 @@
             this.gioca_btn.ForeColor = System.Drawing.Color.Blue;
             this.gioca_btn.Location = new System.Drawing.Point(171, 627);
             this.gioca_btn.Name = "gioca_btn";
-            this.gioca_btn.Size = new System.Drawing.Size(141, 30);
+            this.gioca_btn.Size = new System.Drawing.Size(270, 30);
             this.gioca_btn.TabIndex = 9;
-            this.gioca_btn.Text = "INTRUSO?";
+            this.gioca_btn.Text = "TROVA L\'INTRUSO";
             this.gioca_btn.UseVisualStyleBackColor = true;
             this.gioca_btn.Visible = false;
+            this.gioca_btn.Click += new System.EventHandler(this.gioca_btn_Click);
             // 
             // Interaction1
             // 

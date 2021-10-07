@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace _4weeks4inclusion
 {
@@ -57,6 +58,9 @@ namespace _4weeks4inclusion
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            parentForm.playbackResourceAudio("iniziamo");
+            Thread.Sleep(3000);
             this.Visible = false;
             parentForm.onStart();
         }

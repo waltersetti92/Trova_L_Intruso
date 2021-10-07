@@ -35,25 +35,25 @@ namespace _4weeks4inclusion
             p1.Visible = true;
             this.Update();
             parentForm.playbackResourceAudio(e);
-            Thread.Sleep(4000);
+            Thread.Sleep(3500);
             p2.WaitOnLoad = true;
             p2.ImageLocation = Main.resourcesPath + "\\" + b + ".png";
             p2.Visible = true;
             this.Update();
             parentForm.playbackResourceAudio(f);
-            Thread.Sleep(2000);
+            Thread.Sleep(3500);
             p3.WaitOnLoad = true;
             p3.ImageLocation = Main.resourcesPath + "\\" + c + ".png";
             p3.Visible = true;
             this.Update();
             parentForm.playbackResourceAudio(g);
-            Thread.Sleep(2000);
+            Thread.Sleep(3500);
             p4.WaitOnLoad = true;
             p4.ImageLocation = Main.resourcesPath + "\\" + d + ".png";
             p4.Visible = true;
             this.Update();
             parentForm.playbackResourceAudio(h);
-            Thread.Sleep(2000);
+            Thread.Sleep(3500);
 
         }
         public void setPos(int w, int h)
@@ -71,7 +71,7 @@ namespace _4weeks4inclusion
 
             if (i == 1)
             {
-                Images_Sounds("Bicycle", "cat", "dog", "hamster", "bicicletta", "gatto", "cane", "criceto");
+                Images_Sounds("snake", "cow", "lizard", "iguana", "serpente", "mucca", "lucertola", "iguana");
             }
         }
         private void Interaction1_Load(object sender, EventArgs e)
@@ -83,15 +83,22 @@ namespace _4weeks4inclusion
         {
             resetOperations();
             this.Update();
+            parentForm.playbackResourceAudio("animali");
+            Thread.Sleep(3000);
             Listen.Enabled = false;
-
-                setOperationsIcons(parentForm.step);
+           setOperationsIcons(parentForm.step);
             if (parentForm.step < 6)
             {
                 this.Update();
                 gioca_btn.Visible = true;
             }
 
+        }
+
+        private void gioca_btn_Click(object sender, EventArgs e)
+        {
+            parentForm.playbackResourceAudio("intruso");
+            Thread.Sleep(3000);
         }
     }
 }

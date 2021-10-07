@@ -41,11 +41,11 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Snap ITC", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(532, 356);
+            this.button1.Location = new System.Drawing.Point(510, 358);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 47);
+            this.button1.Size = new System.Drawing.Size(208, 47);
             this.button1.TabIndex = 5;
-            this.button1.Text = "INIZIA!";
+            this.button1.Text = "INIZIAMO";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
