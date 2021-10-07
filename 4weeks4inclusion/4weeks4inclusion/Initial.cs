@@ -54,5 +54,11 @@ namespace _4weeks4inclusion
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            parentForm.onStart();
+        }
     }
 }

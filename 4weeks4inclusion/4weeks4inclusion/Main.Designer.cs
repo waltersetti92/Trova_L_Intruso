@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.initial1 = new _4weeks4inclusion.Initial();
+            this.interaction11 = new _4weeks4inclusion.Interaction1();
             this.SuspendLayout();
             // 
             // initial1
@@ -41,12 +42,20 @@
             this.initial1.Size = new System.Drawing.Size(387, 340);
             this.initial1.TabIndex = 0;
             // 
+            // interaction11
+            // 
+            this.interaction11.Location = new System.Drawing.Point(30, 12);
+            this.interaction11.Name = "interaction11";
+            this.interaction11.Size = new System.Drawing.Size(725, 300);
+            this.interaction11.TabIndex = 1;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(759, 450);
+            this.Controls.Add(this.interaction11);
             this.Controls.Add(this.initial1);
             this.Name = "Main";
             this.Text = "Trova l\'intruso";
@@ -59,6 +68,7 @@
         #endregion
 
         private Initial initial1;
+        private Interaction1 interaction11;
     }
 }
 

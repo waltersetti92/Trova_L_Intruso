@@ -18,7 +18,9 @@ namespace _4weeks4inclusion
         public Main()
         {
             InitializeComponent();
+            interaction11.parentForm = this;
             initial1.parentForm = this;
+            interaction11.Visible = false;
             initial1.Visible = false;
             home();
 
@@ -29,10 +31,17 @@ namespace _4weeks4inclusion
             initial1.Show();
             currUC = initial1;
         }
+        public void onStart()
+        {
+            initial1.Visible = false;
+            interaction11.Visible = true;
+            currUC = interaction11;
+        }
         private void Main_Load(object sender, EventArgs e)
         {
             Size size = this.Size;
             initial1.setPos(size.Width, size.Height);
+            interaction11.setPos(size.Width, size.Height);
         }
 
         private void initial2_Load(object sender, EventArgs e)
