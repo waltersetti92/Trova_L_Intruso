@@ -21,6 +21,7 @@ namespace _4weeks4inclusion
             SetStyle(ControlStyles.Opaque, true);
             labLuda.BackColor = Color.Transparent;
             this.BackColor = Color.Transparent;
+            button1.Visible = false;
         }
         public void setPos(int w, int h)
         {
@@ -34,6 +35,12 @@ namespace _4weeks4inclusion
         private void Initial_Load(object sender, EventArgs e)
         {
 
+        }
+        public void suono_iniziale() {
+            
+            parentForm.playbackResourceAudio("intruso1");
+            Thread.Sleep(3000);
+            button1.Visible = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

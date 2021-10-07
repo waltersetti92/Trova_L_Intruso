@@ -71,7 +71,7 @@ namespace _4weeks4inclusion
 
             if (i == 1)
             {
-                Images_Sounds("snake", "cow", "lizard", "iguana", "serpente", "mucca", "lucertola", "iguana");
+                Images_Sounds("snake", "cow", "lizard", "crocodile", "serpente", "mucca", "lucertola", "coccodrillo");
             }
         }
         private void Interaction1_Load(object sender, EventArgs e)
@@ -99,6 +99,8 @@ namespace _4weeks4inclusion
         {
             parentForm.playbackResourceAudio("intruso");
             Thread.Sleep(3000);
+            parentForm.activity();
+            resetOperations();
         }
     }
 }

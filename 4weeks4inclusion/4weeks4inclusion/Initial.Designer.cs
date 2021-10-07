@@ -54,13 +54,13 @@
             this.labLuda.AutoSize = true;
             this.labLuda.BackColor = System.Drawing.Color.Transparent;
             this.labLuda.Font = new System.Drawing.Font("Snap ITC", 69.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labLuda.ForeColor = System.Drawing.Color.Gold;
-            this.labLuda.Location = new System.Drawing.Point(27, 57);
+            this.labLuda.ForeColor = System.Drawing.Color.Blue;
+            this.labLuda.Location = new System.Drawing.Point(258, 57);
             this.labLuda.Margin = new System.Windows.Forms.Padding(3);
             this.labLuda.Name = "labLuda";
-            this.labLuda.Size = new System.Drawing.Size(1144, 120);
+            this.labLuda.Size = new System.Drawing.Size(723, 120);
             this.labLuda.TabIndex = 6;
-            this.labLuda.Text = "TROVA L\'INTRUSO!";
+            this.labLuda.Text = "L\'INTRUSO!";
             this.labLuda.Click += new System.EventHandler(this.labLuda_Click);
             // 
             // pictureBox3
