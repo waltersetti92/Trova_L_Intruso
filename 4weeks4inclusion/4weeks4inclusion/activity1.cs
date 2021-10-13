@@ -14,7 +14,7 @@ namespace _4weeks4inclusion
     public partial class activity1 : UserControl
     {
         public Main parentForm { get; set; }
-        public int timeleft = 5; //da cambiare
+        public int timeleft = 4; //da cambiare
 
         public activity1()
         {
@@ -42,6 +42,10 @@ namespace _4weeks4inclusion
             if (i == 2)
             {
                 Images_Sounds("pear", "pera");
+            }
+            if (i == 3)
+            {
+                Images_Sounds("piano", "pianoforte");
             }
             parentForm.playbackResourceAudio("domanda");
             lbl_intruso.Visible = true;
