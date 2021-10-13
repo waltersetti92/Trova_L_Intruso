@@ -89,6 +89,14 @@ namespace _4weeks4inclusion
             {
                 Images_Sounds("crab", "pullover", "sun", "infradito", "granchio", "maglione", "sole", "infradito");
             }
+            if (i == 6)
+            {
+                Images_Sounds("pizza", "cake", "icecream", "chocolate", "pizza", "torta", "gelato", "cioccolato");
+            }
+            if (i == 7)
+            {
+                Images_Sounds("banana", "apple", "flower", "orange", "banana", "mela", "fiore", "arancia");
+            }
         }
         private void Interaction1_Load(object sender, EventArgs e)
         {
@@ -99,15 +107,17 @@ namespace _4weeks4inclusion
         {
             resetOperations();
             this.Update();
-            parentForm.playbackResourceAudio("gruppo_primo");
+            parentForm.playbackResourceAudio("gruppo");
             Thread.Sleep(3000);
             Listen.Enabled = false;
            setOperationsIcons(parentForm.step);
-            if (parentForm.step < 6)
-            {
-                this.Update();
-                gioca_btn.Visible = true;
-            }
+            this.Update();
+            gioca_btn.Visible = true;
+           // if (parentForm.step < 6)
+           // {
+                //this.Update();
+               // gioca_btn.Visible = true;
+            //}
 
         }
 

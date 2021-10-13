@@ -14,14 +14,15 @@ namespace _4weeks4inclusion
     public partial class activity1 : UserControl
     {
         public Main parentForm { get; set; }
-        public int timeleft = 4; //da cambiare
+        public int timeleft = 10; //da cambiare
+        
 
         public activity1()
         {
             InitializeComponent();
             lbl_intruso.Visible = false;
-            back.Visible = false;
             lbl_timer.Visible = false;
+
     }
         public void Images_Sounds(string a, string b)
         {
@@ -55,6 +56,14 @@ namespace _4weeks4inclusion
             {
                 Images_Sounds("pullover", "maglione");
             }
+            if (i == 6)
+            {
+                Images_Sounds("icecream", "gelato");
+            }
+            if (i == 7)
+            {
+                Images_Sounds("apple", "mela");
+            }
             parentForm.playbackResourceAudio("domanda");
             lbl_intruso.Visible = true;
             this.Update();
@@ -87,10 +96,9 @@ namespace _4weeks4inclusion
             Thread.Sleep(2000);
             this.Hide();
             parentForm.onStart();
-            timeleft = 5;
+            timeleft = 15;
             lbl_timer.Visible = false;
             lbl_intruso.Visible = false;
-            back.Visible = false;
             timer1.Enabled = false;
         }
 
@@ -107,9 +115,15 @@ namespace _4weeks4inclusion
                 lbl_timer.Visible = true;
                 this.Update();
                 Thread.Sleep(4000);
-                back.Visible = true;
                 this.Update();
- 
+                Thread.Sleep(500);
+                parentForm.step++;
+                this.Hide();
+                parentForm.onStart();
+                timeleft = 15;
+                lbl_timer.Visible = false;
+                lbl_intruso.Visible = false;
+                timer1.Enabled = false;
             }
         }
 
