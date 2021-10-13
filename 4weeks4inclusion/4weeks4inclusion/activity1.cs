@@ -14,7 +14,7 @@ namespace _4weeks4inclusion
     public partial class activity1 : UserControl
     {
         public Main parentForm { get; set; }
-        public int timeleft = 20;
+        public int timeleft = 5; //da cambiare
 
         public activity1()
         {
@@ -39,6 +39,10 @@ namespace _4weeks4inclusion
             {
                 Images_Sounds("lizard", "lucertola");
             }
+            if (i == 2)
+            {
+                Images_Sounds("pear", "pera");
+            }
             parentForm.playbackResourceAudio("domanda");
             lbl_intruso.Visible = true;
             this.Update();
@@ -61,6 +65,7 @@ namespace _4weeks4inclusion
         {
             timer1.Enabled = true;
             timer1.Stop();
+         
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -69,8 +74,12 @@ namespace _4weeks4inclusion
             parentForm.playbackResourceAudio("gruppo");
             Thread.Sleep(2000);
             this.Hide();
-
             parentForm.onStart();
+            timeleft = 5;
+            lbl_timer.Visible = false;
+            lbl_intruso.Visible = false;
+            back.Visible = false;
+            timer1.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -90,6 +99,11 @@ namespace _4weeks4inclusion
                 this.Update();
  
             }
+        }
+
+        private void lbl_intruso_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

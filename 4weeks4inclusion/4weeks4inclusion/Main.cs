@@ -52,8 +52,11 @@ namespace _4weeks4inclusion
         private void Main_Load(object sender, EventArgs e)
         {
             Size size = this.Size;
+            interaction11.setPos(size.Width, size.Height);
+            activity11.setPos(size.Width, size.Height);
             initial1.setPos(size.Width, size.Height);
             interaction11.setPos(size.Width, size.Height);
+            activity11.setPos(size.Width, size.Height);
         }
         public void playbackResourceAudio(string audioname)
         {

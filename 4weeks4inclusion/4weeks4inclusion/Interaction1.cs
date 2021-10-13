@@ -73,6 +73,10 @@ namespace _4weeks4inclusion
             {
                 Images_Sounds("snake", "cow", "lizard", "crocodile", "serpente", "mucca", "lucertola", "coccodrillo");
             }
+            if (i == 2)
+            {
+                Images_Sounds("kite", "pear", "orsacchiotto", "ball", "aquilone", "pera", "orsacchiotto", "palla");
+            }
         }
         private void Interaction1_Load(object sender, EventArgs e)
         {
@@ -83,7 +87,7 @@ namespace _4weeks4inclusion
         {
             resetOperations();
             this.Update();
-            parentForm.playbackResourceAudio("animali");
+            parentForm.playbackResourceAudio("gruppo_primo");
             Thread.Sleep(3000);
             Listen.Enabled = false;
            setOperationsIcons(parentForm.step);
@@ -97,8 +101,8 @@ namespace _4weeks4inclusion
 
         private void gioca_btn_Click(object sender, EventArgs e)
         {
-            parentForm.playbackResourceAudio("intruso");
-            Thread.Sleep(3000);
+            //parentForm.playbackResourceAudio("intruso");
+            //Thread.Sleep(3000);
             parentForm.activity();
             resetOperations();
         }
