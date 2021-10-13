@@ -81,6 +81,10 @@ namespace _4weeks4inclusion
             {
                 Images_Sounds("piano", "violin", "harp", "guitar", "pianoforte", "violino", "arpa", "chitarra");
             }
+            if (i == 4)
+            {
+                Images_Sounds("pigeon", "hummingbird", "eagle", "rooster", "piccione", "colibrì", "aquila", "gallo");
+            }
         }
         private void Interaction1_Load(object sender, EventArgs e)
         {

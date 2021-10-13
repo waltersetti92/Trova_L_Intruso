@@ -47,6 +47,10 @@ namespace _4weeks4inclusion
             {
                 Images_Sounds("piano", "pianoforte");
             }
+            if (i == 4)
+            {
+                Images_Sounds("hummingbird", "colibrì");
+            }
             parentForm.playbackResourceAudio("domanda");
             lbl_intruso.Visible = true;
             this.Update();
