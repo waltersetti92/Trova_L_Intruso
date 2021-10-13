@@ -51,6 +51,10 @@ namespace _4weeks4inclusion
             {
                 Images_Sounds("hummingbird", "colibrì");
             }
+            if (i == 5)
+            {
+                Images_Sounds("pullover", "maglione");
+            }
             parentForm.playbackResourceAudio("domanda");
             lbl_intruso.Visible = true;
             this.Update();
