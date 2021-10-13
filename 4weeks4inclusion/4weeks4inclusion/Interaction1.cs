@@ -97,6 +97,18 @@ namespace _4weeks4inclusion
             {
                 Images_Sounds("banana", "apple", "flower", "orange", "banana", "mela", "fiore", "arancia");
             }
+            if (i == 8)
+            {
+                Images_Sounds("octopus", "deer", "hedgehog", "owl", "polipo", "cerbiatto", "porcospino", "gufo");
+            }
+            if (i == 9)
+            {
+                Images_Sounds("book", "note", "pen", "mike", "libro", "agenda", "penna", "microfono");
+            }
+            if (i == 10)
+            {
+                Images_Sounds("car", "train", "bicycle", "plane", "automobile", "treno", "bicicletta", "aereoplano");
+            }
         }
         private void Interaction1_Load(object sender, EventArgs e)
         {

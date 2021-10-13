@@ -14,7 +14,7 @@ namespace _4weeks4inclusion
     public partial class activity1 : UserControl
     {
         public Main parentForm { get; set; }
-        public int timeleft = 10; //da cambiare
+        public int timeleft = 7; //da cambiare
         
 
         public activity1()
@@ -22,6 +22,7 @@ namespace _4weeks4inclusion
             InitializeComponent();
             lbl_intruso.Visible = false;
             lbl_timer.Visible = false;
+            Listen.Visible = false;
 
     }
         public void Images_Sounds(string a, string b)
@@ -63,6 +64,18 @@ namespace _4weeks4inclusion
             if (i == 7)
             {
                 Images_Sounds("apple", "mela");
+            }
+            if (i == 8)
+            {
+                Images_Sounds("octopus", "polipo");
+            }
+            if (i == 9)
+            {
+                Images_Sounds("book", "libro");
+            }
+            if (i == 10)
+            {
+                Images_Sounds("bicycle", "bicicletta");
             }
             parentForm.playbackResourceAudio("domanda");
             lbl_intruso.Visible = true;
@@ -116,20 +129,25 @@ namespace _4weeks4inclusion
                 this.Update();
                 Thread.Sleep(4000);
                 this.Update();
-                Thread.Sleep(500);
-                parentForm.step++;
-                this.Hide();
-                parentForm.onStart();
-                timeleft = 15;
-                lbl_timer.Visible = false;
-                lbl_intruso.Visible = false;
-                timer1.Enabled = false;
+                Listen.Visible = true;
+
             }
         }
 
         private void lbl_intruso_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Listen_Click(object sender, EventArgs e)
+        {
+            parentForm.step++;
+            this.Hide();
+            parentForm.onStart();
+            timeleft = 7;
+            lbl_timer.Visible = false;
+            lbl_intruso.Visible = false;
+            timer1.Enabled = false;
         }
     }
 }

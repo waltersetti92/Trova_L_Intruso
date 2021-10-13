@@ -33,6 +33,7 @@
             this.lbl_intruso = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbl_timer = new System.Windows.Forms.Label();
+            this.Listen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.p5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,12 +74,26 @@
             this.lbl_timer.TabIndex = 8;
             this.lbl_timer.Text = "TEMPO SCADUTO!";
             // 
+            // Listen
+            // 
+            this.Listen.BackColor = System.Drawing.Color.Transparent;
+            this.Listen.Font = new System.Drawing.Font("Snap ITC", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Listen.ForeColor = System.Drawing.Color.Blue;
+            this.Listen.Location = new System.Drawing.Point(-4, 415);
+            this.Listen.Name = "Listen";
+            this.Listen.Size = new System.Drawing.Size(197, 41);
+            this.Listen.TabIndex = 9;
+            this.Listen.Text = "INDIETRO";
+            this.Listen.UseVisualStyleBackColor = false;
+            this.Listen.Click += new System.EventHandler(this.Listen_Click);
+            // 
             // activity1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.Listen);
             this.Controls.Add(this.lbl_timer);
             this.Controls.Add(this.lbl_intruso);
             this.Controls.Add(this.p5);
@@ -97,5 +112,6 @@
         private System.Windows.Forms.Label lbl_intruso;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbl_timer;
+        private System.Windows.Forms.Button Listen;
     }
 }
