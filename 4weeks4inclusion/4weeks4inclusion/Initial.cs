@@ -38,8 +38,8 @@ namespace _4weeks4inclusion
         }
         public void suono_iniziale() {
             
-            parentForm.playbackResourceAudio("intruso1");
-            Thread.Sleep(3000);
+            //parentForm.playbackResourceAudio("intruso1");
+            //Thread.Sleep(3000);
             button1.Visible = true;
         }
 

@@ -34,6 +34,7 @@
             this.p2 = new System.Windows.Forms.PictureBox();
             this.p4 = new System.Windows.Forms.PictureBox();
             this.gioca_btn = new System.Windows.Forms.Button();
+            this.LBL_GC = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.p3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2)).BeginInit();
@@ -102,11 +103,23 @@
             this.gioca_btn.Visible = false;
             this.gioca_btn.Click += new System.EventHandler(this.gioca_btn_Click);
             // 
+            // LBL_GC
+            // 
+            this.LBL_GC.AutoSize = true;
+            this.LBL_GC.Font = new System.Drawing.Font("Snap ITC", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBL_GC.ForeColor = System.Drawing.Color.Blue;
+            this.LBL_GC.Location = new System.Drawing.Point(149, 279);
+            this.LBL_GC.Name = "LBL_GC";
+            this.LBL_GC.Size = new System.Drawing.Size(1097, 103);
+            this.LBL_GC.TabIndex = 10;
+            this.LBL_GC.Text = "GIOCO COMPLETATO!";
+            // 
             // Interaction1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
+            this.Controls.Add(this.LBL_GC);
             this.Controls.Add(this.gioca_btn);
             this.Controls.Add(this.p4);
             this.Controls.Add(this.p2);
@@ -114,13 +127,14 @@
             this.Controls.Add(this.p3);
             this.Controls.Add(this.Listen);
             this.Name = "Interaction1";
-            this.Size = new System.Drawing.Size(1240, 713);
+            this.Size = new System.Drawing.Size(1271, 713);
             this.Load += new System.EventHandler(this.Interaction1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.p3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,5 +146,6 @@
         private System.Windows.Forms.PictureBox p2;
         private System.Windows.Forms.PictureBox p4;
         private System.Windows.Forms.Button gioca_btn;
+        private System.Windows.Forms.Label LBL_GC;
     }
 }

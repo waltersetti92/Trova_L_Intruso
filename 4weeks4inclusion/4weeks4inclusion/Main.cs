@@ -49,6 +49,13 @@ namespace _4weeks4inclusion
             currUC = interaction11;
            
         }
+        public void finale()
+        {
+            initial1.Visible = false;
+            interaction11.Visible = true;
+            currUC = interaction11;
+            interaction11.finale();
+        }
         private void Main_Load(object sender, EventArgs e)
         {
             Size size = this.Size;

@@ -68,7 +68,7 @@
             this.lbl_timer.AutoSize = true;
             this.lbl_timer.Font = new System.Drawing.Font("Snap ITC", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_timer.ForeColor = System.Drawing.Color.Green;
-            this.lbl_timer.Location = new System.Drawing.Point(377, 551);
+            this.lbl_timer.Location = new System.Drawing.Point(633, 551);
             this.lbl_timer.Name = "lbl_timer";
             this.lbl_timer.Size = new System.Drawing.Size(625, 69);
             this.lbl_timer.TabIndex = 8;

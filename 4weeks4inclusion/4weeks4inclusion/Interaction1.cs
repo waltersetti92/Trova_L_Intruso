@@ -17,6 +17,7 @@ namespace _4weeks4inclusion
         public Interaction1()
         {
             InitializeComponent();
+            LBL_GC.Visible = false;
         }
         private void resetOperations()
         {
@@ -107,8 +108,18 @@ namespace _4weeks4inclusion
             }
             if (i == 10)
             {
-                Images_Sounds("car", "train", "bicycle", "plane", "automobile", "treno", "bicicletta", "aereoplano");
+                Images_Sounds("car", "train", "bicycle", "plane", "automobile", "treno", "bicicletta", "aereo");
             }
+        }
+        public void finale()
+        {
+           // resetOperations();
+            Listen.Visible = false;
+            LBL_GC.Visible = true;
+            this.Update();
+            parentForm.playbackResourceAudio("clapping1");
+            Thread.Sleep(3500);
+
         }
         private void Interaction1_Load(object sender, EventArgs e)
         {
@@ -124,6 +135,7 @@ namespace _4weeks4inclusion
             Listen.Enabled = false;
            setOperationsIcons(parentForm.step);
             this.Update();
+            Thread.Sleep(500);
             gioca_btn.Visible = true;
            // if (parentForm.step < 6)
            // {

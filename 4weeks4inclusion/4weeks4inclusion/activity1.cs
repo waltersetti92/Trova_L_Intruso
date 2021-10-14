@@ -97,6 +97,7 @@ namespace _4weeks4inclusion
 
         private void activity1_Load(object sender, EventArgs e)
         {
+            
             timer1.Enabled = true;
             timer1.Stop();
          
@@ -124,10 +125,26 @@ namespace _4weeks4inclusion
             if (timeleft == 0)
             {
                 timer1.Stop();
-                parentForm.playbackResourceAudio("tempo");
-                lbl_timer.Visible = true;
-                this.Update();
-                Thread.Sleep(4000);
+                if (parentForm.step==1 || parentForm.step == 4 || parentForm.step == 6 || parentForm.step == 7 || parentForm.step == 9)
+                {
+                    parentForm.playbackResourceAudio("no");
+                    lbl_timer.Text = "NO!";
+                    lbl_timer.ForeColor = Color.Red;
+                    lbl_timer.Visible = true;
+                    this.Update();
+
+                }
+                else {
+                    parentForm.playbackResourceAudio("si");
+                    lbl_timer.Text = "SI!";
+                    lbl_timer.ForeColor = Color.Green;
+                    lbl_timer.Visible = true;
+                    this.Update();
+                }
+                    //parentForm.playbackResourceAudio("tempo");
+               // lbl_timer.Visible = true;
+               // this.Update();
+               // Thread.Sleep(4000);
                 this.Update();
                 Listen.Visible = true;
 
@@ -142,12 +159,22 @@ namespace _4weeks4inclusion
         private void Listen_Click(object sender, EventArgs e)
         {
             parentForm.step++;
-            this.Hide();
-            parentForm.onStart();
-            timeleft = 7;
-            lbl_timer.Visible = false;
-            lbl_intruso.Visible = false;
-            timer1.Enabled = false;
+            if (parentForm.step <= 1)
+            {
+                this.Hide();
+                parentForm.onStart();
+                timeleft = 7;
+                lbl_timer.Visible = false;
+                lbl_intruso.Visible = false;
+                timer1.Enabled = false;
+                Listen.Visible = false;
+            }
+            else
+            {
+                this.Hide();
+                parentForm.finale();
+            }
+           
         }
     }
 }
