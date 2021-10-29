@@ -35,29 +35,32 @@
             // 
             // interaction11
             // 
+            this.interaction11.AutoSize = true;
             this.interaction11.Location = new System.Drawing.Point(197, 29);
             this.interaction11.Name = "interaction11";
             this.interaction11.parentForm = null;
-            this.interaction11.Size = new System.Drawing.Size(725, 300);
+            this.interaction11.Size = new System.Drawing.Size(725, 625);
             this.interaction11.TabIndex = 1;
             // 
             // initial1
             // 
+            this.initial1.AutoSize = true;
             this.initial1.BackColor = System.Drawing.Color.Transparent;
             this.initial1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.initial1.Location = new System.Drawing.Point(305, 29);
             this.initial1.Name = "initial1";
             this.initial1.parentForm = null;
-            this.initial1.Size = new System.Drawing.Size(387, 340);
+            this.initial1.Size = new System.Drawing.Size(1111, 564);
             this.initial1.TabIndex = 0;
             // 
             // activity11
             // 
+            this.activity11.AutoSize = true;
             this.activity11.BackColor = System.Drawing.Color.Transparent;
             this.activity11.Location = new System.Drawing.Point(-6, 39);
             this.activity11.Name = "activity11";
             this.activity11.parentForm = null;
-            this.activity11.Size = new System.Drawing.Size(889, 476);
+            this.activity11.Size = new System.Drawing.Size(951, 476);
             this.activity11.TabIndex = 2;
             // 
             // Main
@@ -70,10 +73,11 @@
             this.Controls.Add(this.interaction11);
             this.Controls.Add(this.initial1);
             this.Name = "Main";
-            this.Text = "Trova l\'intruso";
+            this.Text = "Find the intruder";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

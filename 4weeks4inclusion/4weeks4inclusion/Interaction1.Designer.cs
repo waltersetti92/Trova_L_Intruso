@@ -50,7 +50,7 @@
             this.Listen.Name = "Listen";
             this.Listen.Size = new System.Drawing.Size(302, 41);
             this.Listen.TabIndex = 4;
-            this.Listen.Text = "NUOVO GRUPPO";
+            this.Listen.Text = "NEW GROUP";
             this.Listen.UseVisualStyleBackColor = false;
             this.Listen.Click += new System.EventHandler(this.Listen_Click);
             // 
@@ -96,9 +96,9 @@
             this.gioca_btn.ForeColor = System.Drawing.Color.Blue;
             this.gioca_btn.Location = new System.Drawing.Point(336, 581);
             this.gioca_btn.Name = "gioca_btn";
-            this.gioca_btn.Size = new System.Drawing.Size(380, 41);
+            this.gioca_btn.Size = new System.Drawing.Size(438, 41);
             this.gioca_btn.TabIndex = 9;
-            this.gioca_btn.Text = "TROVA L\'INTRUSO";
+            this.gioca_btn.Text = "FIND THE INTRUDER";
             this.gioca_btn.UseVisualStyleBackColor = true;
             this.gioca_btn.Visible = false;
             this.gioca_btn.Click += new System.EventHandler(this.gioca_btn_Click);
@@ -110,9 +110,9 @@
             this.LBL_GC.ForeColor = System.Drawing.Color.Blue;
             this.LBL_GC.Location = new System.Drawing.Point(149, 279);
             this.LBL_GC.Name = "LBL_GC";
-            this.LBL_GC.Size = new System.Drawing.Size(1097, 103);
+            this.LBL_GC.Size = new System.Drawing.Size(1010, 103);
             this.LBL_GC.TabIndex = 10;
-            this.LBL_GC.Text = "GIOCO COMPLETATO!";
+            this.LBL_GC.Text = "GAME COMPLETED!";
             // 
             // Interaction1
             // 

@@ -42,11 +42,11 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Snap ITC", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(482, 354);
+            this.button1.Location = new System.Drawing.Point(456, 355);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(286, 61);
+            this.button1.Size = new System.Drawing.Size(353, 61);
             this.button1.TabIndex = 5;
-            this.button1.Text = "INIZIAMO";
+            this.button1.Text = "LET\'S BEGIN";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -59,15 +59,15 @@
             this.labLuda.Location = new System.Drawing.Point(121, 0);
             this.labLuda.Margin = new System.Windows.Forms.Padding(3);
             this.labLuda.Name = "labLuda";
-            this.labLuda.Size = new System.Drawing.Size(930, 155);
+            this.labLuda.Size = new System.Drawing.Size(1247, 155);
             this.labLuda.TabIndex = 6;
-            this.labLuda.Text = "L\'INTRUSO!";
+            this.labLuda.Text = "THE INTRUDER!";
             this.labLuda.Click += new System.EventHandler(this.labLuda_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::_4weeks4inclusion.Properties.Resources.mono_question_mark;
-            this.pictureBox3.Location = new System.Drawing.Point(787, 202);
+            this.pictureBox3.Location = new System.Drawing.Point(815, 201);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(321, 348);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

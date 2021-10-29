@@ -53,9 +53,9 @@
             this.lbl_intruso.ForeColor = System.Drawing.Color.Blue;
             this.lbl_intruso.Location = new System.Drawing.Point(304, 440);
             this.lbl_intruso.Name = "lbl_intruso";
-            this.lbl_intruso.Size = new System.Drawing.Size(818, 86);
+            this.lbl_intruso.Size = new System.Drawing.Size(988, 86);
             this.lbl_intruso.TabIndex = 7;
-            this.lbl_intruso.Text = "E\' LUI L\'INTRUSO?";
+            this.lbl_intruso.Text = "IS HE THE INTRUDER?";
             this.lbl_intruso.Click += new System.EventHandler(this.lbl_intruso_Click);
             // 
             // timer1
@@ -70,9 +70,9 @@
             this.lbl_timer.ForeColor = System.Drawing.Color.Green;
             this.lbl_timer.Location = new System.Drawing.Point(633, 551);
             this.lbl_timer.Name = "lbl_timer";
-            this.lbl_timer.Size = new System.Drawing.Size(625, 69);
+            this.lbl_timer.Size = new System.Drawing.Size(390, 69);
             this.lbl_timer.TabIndex = 8;
-            this.lbl_timer.Text = "TEMPO SCADUTO!";
+            this.lbl_timer.Text = "TIME OUT!";
             // 
             // Listen
             // 
@@ -83,7 +83,7 @@
             this.Listen.Name = "Listen";
             this.Listen.Size = new System.Drawing.Size(197, 41);
             this.Listen.TabIndex = 9;
-            this.Listen.Text = "INDIETRO";
+            this.Listen.Text = "BACK";
             this.Listen.UseVisualStyleBackColor = false;
             this.Listen.Click += new System.EventHandler(this.Listen_Click);
             // 
